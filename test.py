@@ -4,7 +4,7 @@ engine = pyttsx3.init() # object creation
 """ RATE"""
 rate = engine.getProperty('rate')   # getting details of current speaking rate
 print (rate)                        #printing current voice rate
-engine.setProperty('rate', 125)     # setting up new voice rate
+engine.setProperty('rate', 170)     # setting up new voice rate
 
 
 """VOLUME"""
@@ -18,6 +18,7 @@ for voice in voices:
     print(voice)
 #engine.setProperty('voice', voices[0].id)  #changing index, changes voices. o for male
 engine.setProperty('voice', voices[1].id)   #changing index, changes voices. 1 for female
+#engine.setProperty('voice', voices[2].id)   #changing index, changes voices. 1 for female
 
-engine.save_to_file('Hello World', 'test2.mp3')
+engine.save_to_file('Hello World', 'test1.mp3')
 engine.runAndWait()
