@@ -15,6 +15,6 @@ if(completion.choices):
     engine.setProperty('volume',1.0)
     engine.save_to_file(mytext, 'test1.mp3')
     engine.runAndWait()
-    # audio = gtts.gTTS(text=mytext, lang="en", tld="co.in", slow=False)
-    # audio.save('hello.mp3')
+    audio = gtts.gTTS(text=mytext, lang="en", tld="co.in", slow=False)
+    audio.save('hello.mp3')
     print("---- Completed ---")
